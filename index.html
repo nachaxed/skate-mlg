@@ -1,443 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
-    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    
+    <script src="https://kit.fontawesome.com/73b4fe424a.js" crossorigin="anonymous"></script>
     <title>MsFamily</title>
-    <link rel="stylesheet" href="estilos.css" type="text/css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="/icon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="/icon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="/icon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="/icon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="/icon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="/icon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="/icon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="/icon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/icon/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/icon/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/icon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="/icon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/icon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/icon/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
-    <script
-      sync
-      src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyAS1pcut6gOgXbwYR6lE1R9MKL3KzEmxNI"
-    ></script>
   </head>
-
-  <body class="clearfix">
-    <div class="blocker"></div>
-
-    <nav id="menu-main" class="row">
-      <div class="wrap">
-        <div class="float-l links-nav">
-          <ul>
-            <li>
-              <a href="#"><div class="h1">Works</div></a>
-            </li>
-            <li>
-              <a href="#"><div class="h1">About</div></a>
-            </li>
-            <li>
-              <a href="#"><div class="h1">Contacto</div></a>
-            </li>
-          </ul>
-          <!-- language switcher / navigation -->
+  <body>
+    <nav class="navbar">
+      <div class="navbrand">
+        <h1><a href="./index.html"><img src="/assets/Logo_.png" alt="" class="brand"></a></h1>
+        <div class="burger" id="burger">
+          <span class="burger-open">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16">
+              <g fill="#252a32" fill-rule="evenodd">
+                <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
+              </g>
+            </svg>
+          </span>
+          <span class="burger-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+              <path fill="#252a32" fill-rule="evenodd" d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z" />
+            </svg>
+          </span>
         </div>
-        <div class="float-r links-langs text-right">
-          <ul>
-            <li><a <a hreflang="en" href="/">Eng</a></li>
-            <li><a class="current" <a hreflang="es" href="/es/">Esp</a></li>
-            <li><a <a hreflang="ca" href="/ca/">Cat</a></li>
-          </ul>
-        </div>
-        <div class="row">
-          <!-- social media switcher / navigation -->
-          <div class="d-1of2 links-social m-b-20">
-            <a
-              href="https://es-es.facebook.com/lateralthinkingbcn/"
-              target="_blank"
-              ><h2 class="h1 text-center">Facebook</h2></a
-            >
-            <a
-              href="https://www.linkedin.com/company/lateral-thinking/"
-              target="_blank"
-              ><h2 class="h1 text-center">Linkedin</h2></a
-            >
-            <a
-              href="https://www.instagram.com/lateral_thinking_/"
-              target="_blank"
-              ><h2 class="h1 text-center">Instagram</h2></a
-            >
-          </div>
-            </div>
-          </a>
-        </div>
+      </div>
+      <ul class="menu" id="menu">
+        <li class="menu-item"><a href="#" class="menu-link">Inicio</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Tienda</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Comunidad</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Nosotros</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">Contacto</a></li>
+      </ul>
+      <div class="social">
+        <a href="#" class="social-item"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-item"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-item"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-item"><i class="fab fa-pinterest"></i></a>
       </div>
     </nav>
-    <header class="row">
+    <section>
       <div class="wrap">
-        <div class="m-1of5 t-1of5 d-1of5">
-          <a href="/es/" class="back-home">
-            <img class="logo" src="/assets/Logo..PNG" />
-          </a>
-        </div>
-        <div class="m-3of5 t-3of5 d-3of5 text-center">
-          <h2 class="h1 title-main"></h2>
-        </div>
-        <div class="m-1of5 t-1of5 d-1of5 text-right">
-          <button class="menu-icon float-r"><span>toggle menu</span></button>
-
-          <span class="selectLang">Menu</span>
-        </div>
-      </div>
-    </header>
-    <div class="wrap">
-      <div id="page-home" class="row">
-        <a href="/vistas/1/index.html">
-          <div class="m-all block work detail" data-cat="4">
-            <div
-              class="image main"
-              style="
-                background-image: url(/assets/cuadro\ 1\ \(tienda\).jpg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 150vh;
-                margin: 100px;
-                border-radius: 10px;
-              "
-            >
-              <div class="overlay"></div>
-              <div class="title">
-                <h2 class="h1">Tienda</h2>
-                
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="/es/trabajos/play-new/">
-          <div class="m-all block work detail" data-cat="2">
-            <div
-              class="image main"
-              style="
-                background-image: url(/site/assets/files/1083/play_barcelona-portada_3_3__1160x650-02.1200x0.png);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 150vh;
-                margin: 100px;
-                border-radius: 10px;              
-              "
-            >
-              <div class="overlay"></div>
-              <div class="title">
-                <h2 class="h1">Play Barcelona</h2>
-                <h2>Lateral Thinking &amp; Nike</h2>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="/es/trabajos/alexia-putellas/">
-          <div class="m-all block work detail" data-cat="2">
-            <div
-              class="image main"
-              style="
-                background-image: url(/site/assets/files/1085/alexia_portada.1200x0.png);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 150vh;
-                margin: 100px;
-                border-radius: 10px;
-              "
-            >
-              <div class="overlay"></div>
-              <div class="title">
-                <h2 class="h1">Alexia XI. La Reina.</h2>
-                <h2>Nike</h2>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="/es/trabajos/wiser-wash-tru-blu/">
-          <div class="m-all block work detail" data-cat="1">
-            <div
-              class="image main"
-              style="
-                background-image: url(/site/assets/files/1084/plantilla-portada_1160x650-02.1200x0.png);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 150vh;
-                margin: 100px;
-                border-radius: 10px;
-              "
-            >
-              <div class="overlay"></div>
-              <div class="title">
-                <h2 class="h1">Wiser Wash &amp; Tru Blu</h2>
-                <h2>Pepe Jeans</h2>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="/es/trabajos/desigual-sonar-2019/">
-          <div class="m-all block work detail" data-cat="2">
-            <div
-              class="image main"
-              style="
-                background-image: url(/site/assets/files/1086/plantilla-portada_1160x650-02.1200x0.png);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 150vh;
-                margin: 100px;
-                border-radius: 10px;
-              "
-            >
-              <div class="overlay"></div>
-              <div class="title">
-                <h2 class="h1">Desigual Sonar</h2>
-                <h2>Desigual</h2>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a href="/es/trabajos/abaixadors10/">
-          <div class="m-all block work detail" data-cat="4">
-            <div
-              class="image main"
-              style="
-                background-image: url(/site/assets/files/1080/cockteleri_a_abaixadors_10_lateralthinking_dizydiaz_0004.1200x0.jpg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                width: 150vh;
-                margin: 100px;
-                border-radius: 10px;
-              "
-            >
-             
-      </div>
-
-      <div class="row m-b-80">
-        <div class="m-all t-all d-all">
-          <a href="/es/trabajos/" class="more-projects">
-            <h3>All projects</h3>
-          </a>
-        </div>
-      </div>
-    </div>
-    <script
-      src="https://code.jquery.com/jquery-2.2.4.min.js"
-      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-      crossorigin="anonymous"
-    ></script>
-    <script src="/site/templates/scripts/main.js"></script>
-
-    <script type="text/javascript">
-      window.cookieconsent_options = {
-        message:
-          "This website uses cookies to ensure you get the best experience on our website. <br /> Aquest lloc web fa servir cookies per assegurar d'obtenir la millor experiència al nostre lloc web.<br /> Este sitio web utiliza cookies para asegurar que obtenga la mejor experiencia en nuestro sitio web.",
-        dismiss: "OK",
-        learnMore: "More info",
-        link: null,
-        theme: "light-floating",
-      };
-    </script>
-    <script
-      type="text/javascript"
-      src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"
-    ></script>
-    <!-- End Cookie Consent plugin -->
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(["_setAccount", "UA-53690899-1"]);
-      _gaq.push(["_trackPageview"]);
-      (function () {
-        var ga = document.createElement("script");
-        ga.type = "text/javascript";
-        ga.async = true;
-        ga.src =
-          ("https:" == document.location.protocol
-            ? "https://ssl"
-            : "http://www") + ".google-analytics.com/ga.js";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-    <footer class="row">
-      <div class="wrap">
-        <div class="row">
-          <div class="d-1of2">
-            <div class="row">
-              <div class="d-2of3 rotate">
-                <a href="/es/">
-                  <div class="h1">Lateral<br />thinking</div>
-                  <div class="h1">
-                    Making<br />
-                    Extraordinary<br />
-                    Happen<br />
-                    Since<br />
-                    1999
-                  </div>
-                </a>
-              </div>
-              <div class="d-1of3">
-                <a href="/es/">
-                  <img class="logo" src="/site/templates/img/thinker.svg" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="d-1of2">
-            <div class="row">
-              <div class="d-2of5">
-                <div class="h1">Barcelona</div>
-                <p class="office_description o37">
-                  <a class="calibre"> Àlaba 88, 08018 Barcelona </a>
-                  <a class="calibre"> +34 93 159 28 92 </a>
-                  <a href="mailto:hola@lateralthinking.barcelona"
-                    ><img class="icon-mail" src="/site/templates/img/mail.svg"
-                  /></a>
-                </p>
-              </div>
-              <div class="d-1of5">
-                <div class="row links-social">
-                  <div class="h1">Social</div>
-                  <div class="m-1of4 t-1of4">
-                    <a
-                      href="https://es-es.facebook.com/lateralthinkingbcn/"
-                      target="_blank"
-                    >
-                      <p>Facebook</p>
-                    </a>
-                  </div>
-                  <div class="m-1of4 t-1of4">
-                    <a
-                      href="https://www.linkedin.com/company/lateral-thinking/"
-                      target="_blank"
-                    >
-                      <p>Linkedin</p>
-                    </a>
-                  </div>
-                  <div class="m-1of4 t-1of4">
-                    <a
-                      href="https://www.instagram.com/lateral_thinking_/"
-                      target="_blank"
-                    >
-                      <p>Instagram</p>
-                    </a>
-                  </div>
-                  <div class="m-1of4 t-1of4">
-                    <a href="https://vimeo.com/lateralthinking" target="_blank">
-                      <p>Vimeo</p>
-                    </a>
-                  </div>
+        <div id="page-home" class="row">
+          <a href="/vistas/1/index.html">
+            <div class="m-all block work detail" data-cat="4">
+              <div
+                class="image main"
+                style="
+                  background-image: url(/assets/cuadro\ 1\ \(tienda\).jpg);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  width: 100%;
+                  height: 400px;
+                  margin: 10px;
+                  border-radius: 5px;  
+                "
+              >
+                <div class="overlay"></div>
+                <div class="title">
+                  <h2 class="h1">Tienda</h2>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="row separator"></div>
-
-        <div class="row last">
-          <div class="d-1of2">
-            <a href="http://www.skateagora.com/es" target="_blank">
-              <img class="agora" src="/site/templates/img/skateagora.svg" />
-            </a>
-          </div>
-
-          <div class="d-1of2 m-t-30">
-            <div class="h1 m-t-20 text-agora">
-              <a href="http://www.skateagora.com/es" target="_blank">
-                Skate Agora. A new perspective on skateboarding practice in
-                Europe. An initiative of Lateral Thinking. Visit website
-              </a>
+          </a>
+          <!-- segunda card -->
+          <a href="#">
+            <div class="m-all block work detail" data-cat="2">
+              <div
+                class="image main"
+                style="
+                  background-image: url(/assets/Cuadro\ 2\ \(comunidad\).jpg);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  width: 100%;
+                  height: 400px;
+                  margin: 10px;
+                  border-radius: 5px;              
+                "
+              >
+                <div class="overlay"></div>
+                <div class="title">
+                  <h2 class="h1">Comunidad</h2>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-	<script type="text/javascript">
-	
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-53690899-1']);
-_gaq.push(['_trackPageview']);
-(function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
-
-	</script>
-	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
-	</script>
-    </footer>
+          </a>
+          <!--  tercera card -->
+          <a href="#">
+            <div class="m-all block work detail" data-cat="2">
+              <div
+                class="image main"
+                style="
+                  background-image: url(/assets/Cuadro\ 3\ \(nosotors\).JPG);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  width: 100%;
+                  height: 400px;
+                  margin: 10px;
+                  border-radius: 5px;              
+                "
+              >
+                <div class="overlay"></div>
+                <div class="title">
+                  <h2 class="h1">Nosotros</h2>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="/#">
+            <div class="m-all block work detail" data-cat="2">
+              <div
+                class="image main"
+                style="
+                  background-image: url(/assets/Cuadro\ 4\ \(contactanos\).JPG);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  width: 100%;
+                  height: 400px;
+                  margin: 10px;
+                  border-radius: 5px;                
+                "
+              >
+                <div class="overlay"></div>
+                <div class="title">
+                  <h2 class="h1">Contacto</h2>
+                </div>
+              </div>
+            </div>
+          </a>
+    </section>
+    <script src="/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </body>
 </html>
