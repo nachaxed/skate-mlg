@@ -18,8 +18,8 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: #252a32;
-  background: #f1f5f8;
-  background-image: url(/assets/Fondo_HEIC.jpg);
+  background: #000000;
+  background-image: url(/assets/3506328.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,7 +31,7 @@ img {
   display: flex;
   width: 100px;
   height: auto;
-  border-radius: 10px;
+  border-radius: 30px;
   opacity: 80%;
 }
 
@@ -187,6 +187,7 @@ button {
     opacity: 0.2 !important;
     -webkit-transition: opacity, 0.5s;
     transition: opacity, 0.5s;
+    border-radius: 3px;
   }
   
   .block.work .image {
